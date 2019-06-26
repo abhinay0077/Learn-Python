@@ -1,0 +1,105 @@
+a = "Hello"
+print(a) 
+##to have multiple ling string we can use 3 double or single quotes
+a = """Hello welcome to the world of python,
+a = "Hello, World!"
+print(a[1])
+
+
+#we can use substring to trim or get the required chars 
+
+b = "Hello, World!"
+print(b[2:5]) 
+
+b = "Hello, World!"
+print(b[2:]) 
+
+b = "Hello, World!"
+print(b[:]) 
+
+b = "Hello, World!"
+print(b[3:20]) 
+
+b = "Hello, World!"
+print(b[0:]) 
+
+b = "Hello, World!"
+print(b[0:-1]) 
+
+
+#adding white space
+
+#Adding spaces in python can be added at start,end,either sides or in between
+
+#len(string name)-gives the length of the string
+
+## Add the space at Start of the string in Python
+ 
+a="Test String leading space to be added"
+a_len=len(a)+10    # will be adding 10 extra spaces
+a_revised=a.rjust(a_len)
+print a_revised
+
+##add space at end
+
+a="Test String leading space to be added"
+a_len=len(a)+10    # will be adding 10 extra spaces
+a_revised=a.ljust(a_len)
+print a_revised
+
+##add spaces on both the ends
+
+a="Test String leading space to be added"
+a_len=len(a)+10    # will be adding 10 extra spaces
+a_revised=a.center(a_len)
+print a_revised
+
+#add space in between evry letter
+a="Test String leading space to be added"
+a_len=len(a)+10    # will be adding 10 extra spaces -no significance in this
+a_revised=" ".join(a)
+print a_revised
+
+
+
+##removing white spaces
+
+##Strip()-function removes spaces in the string specified
+
+a="    This is Test String to delete white spaces in python    "
+print a
+print a.lstrip() #leading spaces
+print a.strip()  #leading and trailing spaces removed
+print a.rstrip() #trailing spaces removed
+print a.replace(" ", "") # to remove all spaces
+
+list1 = ["apple", "banana", "pie","fisssssssg","guava"]
+print(list1)
+print(list1[2])
+list1[1]="rotte"
+print(list1)
+for a in list1:
+    print (a)
+if "rotte" in list1:
+  print "yes"
+print(len(list1))
+list1.append("orange")
+list1.append("melons")
+print(list1)
+list1.insert(-5,'jack')
+print(list1)
+print(list1.count('fig'))
+list1.sort(reverse=False)
+print(list1)
+def mykey(x):
+    return len(x)
+print(list1.sort(reverse=True,key=mykey))
+print(list1)
+list1.remove("rotte")
+print(list1)
+list1.pop(0)
+print(list1)
+print(list1.index("pie"))
+list2=list(list1)
+print(list2)
+list2=list1.copy()
